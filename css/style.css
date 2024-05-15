@@ -1,0 +1,433 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+}
+
+html {
+    overflow: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+
+/* ************************   navbar css start****************************** */
+
+.navbar {
+    padding: 0 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 20px!important;
+    text-decoration: none;
+    list-style: none;
+    margin-left: 90px;
+    color: #1e30f3!important;
+}
+
+.navbar-brand:hover {
+    color: #423AF3;
+    text-decoration: none;
+}
+
+.navbar-list {
+    color: #7A7C7A;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    line-height: 1.6rem;
+    list-style: none;
+    margin-bottom: 0%;
+}
+
+.navbar-link:link,
+.navbar-link:visited {
+    color: #7A7C7A;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: all 0.3s;
+}
+
+
+/* ************************   navbar css end****************************** */
+
+
+/* ************************   header css start****************************** */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+.badge {
+    display: inline-flex!important;
+    padding: .20rem .45rem!important;
+}
+
+.design {
+    text-align: center;
+    background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+    font-size: 14px!important;
+    border-radius: 10px!important;
+    text-transform: uppercase;
+    /* margin-bottom: 20px; */
+}
+
+.text {
+    color: #6C757D;
+    text-align: center;
+    opacity: 0.8;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.headerh1 {
+    text-align: center;
+    background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+}
+
+.profile {
+    background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+    width: 38vw;
+    height: 30vw;
+    transform: translatey(-10%);
+    position: relative;
+    left: 0;
+    border-radius: 5vw;
+    margin-top: 5vw;
+}
+
+.profile-img {
+    position: absolute;
+    transform: translatey(-50%);
+    left: 10%;
+    bottom: -55%;
+    width: 30vw;
+    height: 33vw;
+}
+
+
+/* ************************   header css end ****************************** */
+
+
+/* ************************   About section css start****************************** */
+
+.text-gradient {
+    background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-para {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+
+/* ************************   About section css end ****************************** */
+
+
+/* ************************   Resume section css start ****************************** */
+
+.resume {
+    background-color: #F8F9FA;
+}
+
+.resumedis {
+    display: flex;
+}
+
+.resumeh1 {
+    padding-top: 50px!important;
+}
+
+.feature {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.6rem;
+}
+
+.bg-gradient-primary-to-secondary {
+    background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+}
+
+.rounded-4 {
+    border-radius: 1rem!important;
+}
+
+.project {
+    background-color: #F8F9FA;
+}
+
+.card {
+    display: flex;
+    border-radius: 20px!important;
+}
+
+.card-body {
+    display: flex;
+    column-gap: 15px !important;
+}
+
+
+/* ************************   Resume section css end ****************************** */
+
+
+/* ************************   Media queries section css start ****************************** */
+
+@media (min-width:1200px)and (max-width:1400px) {
+    .design {
+        font-size: 13px!important;
+    }
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+    .design {
+        font-size: 13px!important;
+    }
+}
+
+@media (min-width:768px) and (max-width: 992px) {
+    .image-wrap {
+        width: 150%;
+        height: auto;
+    }
+    .img-wrapper {
+        width: 100%!important;
+        height: 100%!important;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .img {
+        order: 1;
+    }
+    .text-img {
+        order: 2;
+    }
+    .design {
+        font-size: 13px!important;
+    }
+    .navbar-brand {
+        margin-left: 0;
+    }
+    .navbar-collapse {
+        justify-content: flex-start;
+        /* background-color: #df2929; */
+        top: 0;
+        right: -100%;
+        width: 80%;
+        transition: all 0.3s ease;
+        border: none;
+    }
+    .navbar-toggler {
+        border: none;
+    }
+    .navbar-toggler:active {
+        border: none;
+    }
+    .navbar-toggler-icon {
+        border: none;
+    }
+    .navbar-toggler-icon:active {
+        border: none;
+    }
+    .navbar-nav {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .navbar-nav .nav-item {
+        margin: 0;
+    }
+    .navbar-nav .nav-link {
+        display: flex;
+    }
+    .profile {
+        background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+        width: 65vw;
+        height: 65vw;
+        transform: translatey(-10%);
+        position: relative;
+        left: 0;
+        border-radius: 5vw;
+        margin-top: 10vw;
+    }
+    .profile-img {
+        position: absolute;
+        transform: translatey(-50%);
+        left: 10%;
+        bottom: -55%;
+        width: 55vw;
+        height: 72vw;
+    }
+}
+
+@media (min-width:512px)and (max-width:768px) {
+    .image-wrap {
+        width: 100%;
+        height: auto;
+    }
+    .img-wrapper {
+        width: 100%!important;
+        height: 100%!important;
+    }
+    .card {
+        flex-direction: column;
+    }
+    .card-body {
+        flex-direction: column;
+    }
+    .img-wrap {
+        order: 1;
+    }
+    .text-content {
+        order: 2;
+    }
+    .resumedis {
+        display: block!important;
+        text-align: center;
+    }
+    .profile {
+        background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+        width: 65vw;
+        height: 65vw;
+        transform: translatey(-10%);
+        position: relative;
+        left: 0;
+        border-radius: 5vw;
+        margin-top: 10vw;
+    }
+    .profile-img {
+        position: absolute;
+        transform: translatey(-50%);
+        left: 10%;
+        bottom: -55%;
+        width: 55vw;
+        height: 72vw;
+    }
+    .feature {
+        display: flex;
+    }
+    .design {
+        font-size: 11px!important;
+    }
+    .navbar-brand {
+        margin-left: 0;
+    }
+    .navbar-collapse {
+        justify-content: flex-start;
+        /* background-color: #df2929; */
+        top: 0;
+        right: -100%;
+        width: 80%;
+        transition: all 0.3s ease;
+        border: none;
+    }
+    .navbar-toggler {
+        border: none;
+    }
+    .navbar-toggler:active {
+        border: none;
+    }
+    .navbar-toggler-icon {
+        border: none;
+    }
+    .navbar-toggler-icon:active {
+        border: none;
+    }
+    .navbar-nav {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .navbar-nav .nav-item {
+        margin: 0;
+    }
+    .navbar-nav .nav-link {
+        display: flex;
+    }
+}
+
+@media (max-width:512px) {
+    .image-wrap {
+        width: 100%;
+        height: auto;
+    }
+    .img-wrapper {
+        width: 100%!important;
+        height: 100%!important;
+    }
+    .card {
+        flex-direction: column;
+    }
+    .card-body {
+        flex-direction: column;
+    }
+    .img-wrap {
+        order: 1;
+    }
+    .text-content {
+        order: 2;
+    }
+    .resumedis {
+        display: block!important;
+        text-align: center;
+    }
+    .design {
+        font-size: 11px!important;
+    }
+    .profile {
+        background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+        width: 65vw;
+        height: 65vw;
+        transform: translatey(-10%);
+        position: relative;
+        left: 0;
+        border-radius: 5vw;
+        margin-top: 5vw;
+    }
+    .profile-img {
+        position: absolute;
+        transform: translatey(-50%);
+        left: 10%;
+        bottom: -55%;
+        width: 55vw;
+        height: 72vw;
+    }
+    .navbar-brand {
+        margin-left: 0!important;
+    }
+}
+
+
+/* ************************   Media queries section css end ****************************** */
